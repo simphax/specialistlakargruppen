@@ -1,0 +1,12 @@
+:root {
+    --base-font-family: 'Source Sans Pro', sans-serif;
+
+    --color-dark-grey: #888;
+
+
+    --mobile-site-padding: 1rem;
+}
+
+html, body {
+    font-family: var(--base-font-family);
+}

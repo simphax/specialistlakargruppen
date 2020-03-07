@@ -1,0 +1,26 @@
+.header {
+    background: #4E7AAE;
+    color: #fff;
+}
+.background {
+    width: 100%;
+    background-position: bottom center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.content {
+    padding: var(--mobile-site-padding) var(--mobile-site-padding);
+}
+
+.pre-site-title {
+    font-family: var(--base-font-family);
+    font-size: 1rem;
+}
+
+.site-title {
+    font-family: var(--base-font-family);
+    font-size: 1.8rem;
+
+    font-weight: 600;
+}
