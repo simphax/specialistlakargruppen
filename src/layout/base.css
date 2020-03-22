@@ -1,0 +1,10 @@
+html,
+body {
+  font-family: var(--base-font-family);
+  background-color: var(--color-bg-grey);
+  line-height: 1.8em;
+}
+
+.container-fluid {
+  padding: 0 28px;
+}

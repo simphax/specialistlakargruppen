@@ -1,26 +1,29 @@
 .header {
-    background: #4E7AAE;
-    color: #fff;
+  color: var(--color-black);
 }
 .background {
-    width: 100%;
-    background-position: bottom center;
-    background-repeat: repeat-y;
-    background-size: cover;
+  width: 100%;
+  background-position: bottom center;
+  background-repeat: repeat-y;
+  background-size: cover;
 }
 
 .content {
-    padding: var(--mobile-site-padding) var(--mobile-site-padding);
+  padding: var(--mobile-site-padding) var(--mobile-site-padding);
 }
 
 .pre-site-title {
-    font-family: var(--base-font-family);
-    font-size: 1rem;
+  font-family: var(--base-font-family);
+  font-size: 1rem;
 }
 
 .site-title {
-    font-family: var(--base-font-family);
-    font-size: 1.8rem;
-
-    font-weight: 600;
+  font-family: var(--base-font-family);
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.site-title-uppsala {
+  display: block;
+  color: var(--color-black);
 }

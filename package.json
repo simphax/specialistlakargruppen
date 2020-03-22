@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
+    "bootstrap": "4.4.1",
     "gatsby": "^2.19.7",
     "gatsby-background-image": "^0.9.18",
     "gatsby-image": "^2.2.39",
@@ -22,6 +23,7 @@
     "postcss-preset-env": "^6.7.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-bootstrap": "1.0.0-beta.17",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "styled-components": "^5.0.1"
