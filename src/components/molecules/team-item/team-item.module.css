@@ -1,0 +1,14 @@
+.item {
+  background: var(--color-bg-grey);
+  padding: var(--mobile-content-padding);
+}
+
+.title {
+  display: block;
+  font-size: 1.4rem;
+}
+
+.description {
+  display: block;
+  line-height: 1.2em;
+}

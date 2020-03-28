@@ -9,12 +9,14 @@
 }
 
 .content {
-  padding: var(--mobile-site-padding) var(--mobile-site-padding);
+  padding: calc(var(--mobile-site-padding) * 3) var(--mobile-site-padding)
+    calc(var(--mobile-site-padding) * 2);
 }
 
 .pre-site-title {
   font-family: var(--base-font-family);
   font-size: 1rem;
+  margin: 0;
 }
 
 .site-title {
@@ -22,6 +24,7 @@
   font-size: 1.8rem;
   color: var(--color-primary);
   font-weight: 600;
+  margin: 0;
 }
 .site-title-uppsala {
   display: block;

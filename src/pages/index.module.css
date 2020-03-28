@@ -43,4 +43,14 @@
   padding: var(--mobile-site-padding);
   background: var(--color-black);
   margin-bottom: var(--mobile-content-padding);
+  display: flex;
+  align-items: center;
+}
+.number-box--icon {
+  font-size: 1.5rem;
+  line-height: 0;
+  margin-right: calc(var(--mobile-content-padding) / 2);
+}
+.number-box--text {
+  line-height: 0;
 }
