@@ -18,6 +18,8 @@ import styles from "./index.module.css"
 
 import SiteWidth from "../layout/site-width"
 
+import Map from "../components/map"
+
 const TeamItemLayout = styled.div`
   & > * {
     margin: 0 0 1rem;
@@ -59,8 +61,10 @@ const IndexPage = () => (
                 </Col>
               </Row>
               <Row>
-                <Col lg={6}>
-                  <div className={styles.numberBox}>
+                <Col xl={6}>
+                  <div
+                    className={styles.numberBox + " " + styles.numberBoxPadding}
+                  >
                     <span className={styles.numberBoxIcon}>
                       <AiOutlinePhone />
                     </span>
@@ -69,11 +73,15 @@ const IndexPage = () => (
                     </span>
                   </div>
                 </Col>
-                <Col lg={6}>
-                  <div className={styles.numberBox}>
+                <Col xl={6}>
+                  <div
+                    className={
+                      styles.numberBox + " " + styles.numberBoxPadding2
+                    }
+                  >
                     <span
                       className={styles.numberBoxIcon}
-                      style={{ fontSize: "1.2em" }}
+                      style={{ fontSize: "1.25em" }}
                     >
                       <AiOutlineMail />
                     </span>
@@ -85,7 +93,7 @@ const IndexPage = () => (
               </Row>
             </Col>
             <Col lg={4}>
-              <Image />
+              <Image src="hearts.jpg" />
             </Col>
           </Row>
         </div>
@@ -142,7 +150,7 @@ const IndexPage = () => (
               </p>
             </Col>
             <Col lg={6}>
-              <Image />
+              <Image src="bg-big-heart-baloon.jpg" />
             </Col>
           </Row>
 
@@ -150,6 +158,7 @@ const IndexPage = () => (
         </div>
       </Container>
     </SiteWidth>
+    <Map />
   </Layout>
 )
 

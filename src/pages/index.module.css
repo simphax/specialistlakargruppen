@@ -40,11 +40,25 @@
 }
 
 .number-box {
-  padding: var(--mobile-site-padding);
+  padding: var(--mobile-content-padding);
+  height: 3.6rem;
   background: var(--color-black);
-  margin-bottom: var(--mobile-content-padding);
   display: flex;
   align-items: center;
+}
+.number-box-padding {
+  margin-bottom: var(--mobile-content-padding);
+
+  @media (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+.number-box-padding-2 {
+  margin-bottom: var(--mobile-content-padding);
+
+  @media (min-width: 991px) {
+    margin-bottom: 0;
+  }
 }
 .number-box--icon {
   font-size: 1.5rem;
