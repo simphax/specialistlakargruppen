@@ -1,0 +1,15 @@
+.item {
+  background: var(--color-primary);
+  padding: var(--mobile-content-padding) calc(var(--mobile-content-padding) * 4);
+  margin-right: var(--mobile-content-padding);
+  display: inline-block;
+}
+
+.title {
+  display: block;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.15em;
+}

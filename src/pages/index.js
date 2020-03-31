@@ -19,6 +19,7 @@ import styles from "./index.module.css"
 import SiteWidth from "../layout/site-width"
 
 import Map from "../components/map"
+import CapabilityButton from "../components/molecules/capability-button"
 
 const TeamItemLayout = styled.div`
   & > * {
@@ -129,6 +130,7 @@ const IndexPage = () => (
           </TeamItemLayout>
 
           <Title>Vi utför</Title>
+          <CapabilityButton title="Ultraljud hjärta" url="ultaljud-hjarta" />
           <Title>Välkommen på ett besök</Title>
           <Row>
             <Col lg={6}>
