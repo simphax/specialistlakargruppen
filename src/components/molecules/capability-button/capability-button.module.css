@@ -13,3 +13,44 @@
   text-align: center;
   letter-spacing: 0.15em;
 }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  opacity: 0;
+}
+
+.modal {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1.75rem auto;
+  max-width: 960px;
+  min-height: calc(100% - (1.75rem * 2));
+  outline: none;
+  pointer-events: none;
+}
+
+.modal-content {
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  padding: var(--mobile-content-padding);
+  pointer-events: all;
+}
+.modal-content-inner {
+}
+
+.body-modal-open {
+  overflow: hidden;
+}
+
+.html-modal-open {
+  overflow: hidden;
+}

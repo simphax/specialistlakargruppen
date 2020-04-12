@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Modal from "react-modal"
 
 import Header from "./header"
 import Footer from "./footer"
@@ -15,6 +16,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "./layout.variables.css"
 import "./layout.css"
 import "./base.css"
+
+Modal.setAppElement(`#___gatsby`)
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

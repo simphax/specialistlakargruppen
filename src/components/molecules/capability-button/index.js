@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import styles from "./capability-button.module.css"
 import Modal from "react-modal"
+import "./react-modal.css"
 
 const CapabilityButton = ({ title, url }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false)
@@ -18,8 +19,46 @@ const CapabilityButton = ({ title, url }) => {
       <a href={url} onClick={openModal} className={styles.item}>
         <span className={styles.title}>{title}</span>
       </a>
-      <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
-        {url}
+      <Modal
+        closeTimeoutMS={200}
+        className={styles.modal}
+        overlayClassName={styles.overlay}
+        bodyOpenClassName={styles.bodyModalOpen}
+        htmlOpenClassName={styles.htmlModalOpen}
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+      >
+        <div className={styles.modalContent}>
+          <div className={styles.modalContentInner}>
+            {url}
+            <button>adflkjadl</button>
+            <p>
+              Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
+              amet ipsum dolor sit amet ips
+            </p>
+          </div>
+        </div>
       </Modal>
     </>
   )
