@@ -29,7 +29,7 @@ const ModalContent = () => {
   const { frontmatter, html } = markdownRemark
   return (
     <>
-      <h1>{frontmatter.title}</h1>
+      <h3>{frontmatter.title}</h3>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </>
   )

@@ -47,7 +47,8 @@
   border: 1px solid #ccc;
   background: #fff;
   border-radius: 4px;
-  padding: var(--mobile-content-padding);
+  padding: calc(var(--mobile-content-padding) * 2) var(--mobile-content-padding)
+    var(--mobile-content-padding) var(--mobile-content-padding);
   pointer-events: all;
 }
 .modal-content-inner {

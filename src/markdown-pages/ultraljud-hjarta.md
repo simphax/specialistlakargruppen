@@ -1,6 +1,7 @@
 ---
 path: "/ultraljud-hjarta"
 date: "2018-01-01"
+shortTitle: "Ultraljud hjärta"
 title: "Undersökning av hjärtat med ultraljud"
 ---
 
