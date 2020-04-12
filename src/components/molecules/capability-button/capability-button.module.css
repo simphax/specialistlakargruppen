@@ -5,6 +5,10 @@
   display: inline-block;
 }
 
+.item:active {
+  background: var(--color-primary-darker);
+}
+
 .title {
   display: block;
   font-size: 1rem;
@@ -38,6 +42,8 @@
 }
 
 .modal-content {
+  box-sizing: border-box;
+  width: 100%;
   border: 1px solid #ccc;
   background: #fff;
   border-radius: 4px;

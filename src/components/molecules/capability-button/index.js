@@ -2,6 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import styles from "./capability-button.module.css"
 import Modal from "react-modal"
+
+import ModalContent from "./content"
 import "./react-modal.css"
 
 const CapabilityButton = ({ title, url }) => {
@@ -14,6 +16,7 @@ const CapabilityButton = ({ title, url }) => {
   function closeModal() {
     setIsOpen(false)
   }
+
   return (
     <>
       <a href={url} onClick={openModal} className={styles.item}>
@@ -30,33 +33,7 @@ const CapabilityButton = ({ title, url }) => {
       >
         <div className={styles.modalContent}>
           <div className={styles.modalContentInner}>
-            {url}
-            <button>adflkjadl</button>
-            <p>
-              Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit
-              amet ipsum dolor sit amet ips
-            </p>
+            <ModalContent />
           </div>
         </div>
       </Modal>
