@@ -19,6 +19,11 @@ const ContentPadding = styled.div`
 
 const Title = styled.h2`
   font-size: 1.6em;
+  margin: 0 0 0.3em 0;
+`
+const LeftContent = styled.p`
+  margin: 0;
+  line-height: 1.74em;
 `
 
 const Footer = () => (
@@ -33,15 +38,17 @@ const Footer = () => (
           </Row>
           <Row>
             <Col>
-              Samariterhemmet, Dragarbrunnsgatan 70, Uppsala
-              <br />
-              Telefontid mån–tor 9–11
-              <br />
-              <Obfuscate tel="018 611 72 60" />
-              <br />
-              <Obfuscate email="info@specialistläkargruppen.se" />
-              <br />
-              Landstingsavtal, frikort gäller
+              <LeftContent>
+                Samariterhemmet, Dragarbrunnsgatan 70, Uppsala
+                <br />
+                Telefontid mån–tor 9–11
+                <br />
+                <Obfuscate tel="018 611 72 60" />
+                <br />
+                <Obfuscate email="info@specialistläkargruppen.se" />
+                <br />
+                Landstingsavtal, frikort gäller
+              </LeftContent>
             </Col>{" "}
             <Col>
               Specialistläkargruppen drivs i samarbete med Uppsala och

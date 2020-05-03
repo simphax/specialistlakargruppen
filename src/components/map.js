@@ -28,7 +28,7 @@ const Map = () => {
         frameBorder="0"
         style={{ border: 0 }}
         allowFullScreen=""
-        ariaHidden="false"
+        aria-hidden="false"
         tabIndex="0"
       />
     </MapContainer>

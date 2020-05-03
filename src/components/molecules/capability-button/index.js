@@ -1,12 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styles from "./capability-button.module.css"
-import Modal from "react-modal"
+import Modal from "./modal"
 
-import ModalContent from "./content"
 import "./react-modal.css"
 
-const CapabilityButton = ({ title, url }) => {
+const CapabilityButton = ({ title, path, html }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false)
   function openModal(e) {
     e.preventDefault()
@@ -19,35 +18,28 @@ const CapabilityButton = ({ title, url }) => {
 
   return (
     <>
-      <a href={url} onClick={openModal} className={styles.item}>
+      <a href={path} onClick={openModal} className={styles.item}>
         <span className={styles.title}>{title}</span>
       </a>
       <Modal
-        closeTimeoutMS={200}
-        className={styles.modal}
-        overlayClassName={styles.overlay}
-        bodyOpenClassName={styles.bodyModalOpen}
-        htmlOpenClassName={styles.htmlModalOpen}
+        title={title}
+        html={html}
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-      >
-        <div className={styles.modalContent}>
-          <div className={styles.modalContentInner}>
-            <ModalContent />
-          </div>
-        </div>
-      </Modal>
+      />
     </>
   )
 }
 
 CapabilityButton.propTypes = {
   title: PropTypes.string,
-  url: PropTypes.string,
+  path: PropTypes.string,
+  html: PropTypes.string,
 }
 
 CapabilityButton.defaultProps = {
   title: ``,
-  url: ``,
+  path: ``,
+  html: ``,
 }
 export default CapabilityButton

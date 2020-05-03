@@ -1,14 +1,21 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import CapabilityButton from "../../molecules/capability-button"
 
 const CapabilityButtons = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(limit: 2000) {
+      allMarkdownRemark(
+        sort: { order: ASC, fields: [frontmatter___order] }
+        limit: 2000
+      ) {
         edges {
           node {
+            html
             frontmatter {
               path
+              order
+              shortTitle
               title
               date(formatString: "MMMM DD, YYYY")
             }
@@ -23,12 +30,12 @@ const CapabilityButtons = () => {
   return (
     <>
       {posts.map(post => (
-        <li key={post.node.frontmatter.path}>
-          <span>{post.node.frontmatter.date}</span>
-          {post.node.frontmatter.path}
-          {post.node.frontmatter.title}
-          <p>{post.node.excerpt}</p>
-        </li>
+        <CapabilityButton
+          key={post.node.frontmatter.path}
+          title={post.node.frontmatter.shortTitle}
+          path={post.node.frontmatter.path}
+          html={post.node.html}
+        />
       ))}
     </>
   )

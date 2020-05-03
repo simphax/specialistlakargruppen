@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
@@ -8,6 +7,7 @@ import styled from "styled-components"
 import Layout from "../layout/layout"
 import Title from "../components/atoms/title"
 import Image from "../components/image"
+import AppleImage from "../components/apple-image"
 import TeamItem from "../components/molecules/team-item"
 import SEO from "../layout/seo"
 import Obfuscate from "react-obfuscate"
@@ -25,7 +25,7 @@ const TeamItemLayout = styled.div`
   & > * {
     margin: 0 0 1rem;
   }
-  @media (min-width: 540px) {
+  @media (min-width: 800px) {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -0.5rem;
@@ -41,7 +41,7 @@ const TeamItemLayout = styled.div`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO />
     <SiteWidth>
       <Container fluid="true">
         <div className={styles.introSection}>
@@ -152,7 +152,7 @@ const IndexPage = () => (
               </p>
             </Col>
             <Col lg={6}>
-              <Image src="bg-big-heart-baloon.jpg" />
+              <AppleImage />
             </Col>
           </Row>
 

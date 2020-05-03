@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image/withIEPolyfill"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -12,27 +13,27 @@ import { useStaticQuery, graphql } from "gatsby"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const ModalContent = () => {
+const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      markdownRemark(frontmatter: { path: { eq: "/ultraljud-hjarta" } }) {
-        html
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          path
-          title
+      placeholderImage: file(relativePath: { eq: "apple.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }
   `)
-  const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+
   return (
-    <>
-      <h3>{frontmatter.title}</h3>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-    </>
+    <Img
+      objectFit="contain"
+      objectPosition="50% 50%"
+      style={{ height: "100%", maxHeight: "300px" }}
+      fluid={data.placeholderImage.childImageSharp.fluid}
+    />
   )
 }
 
-export default ModalContent
+export default Image
