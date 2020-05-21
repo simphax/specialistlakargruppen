@@ -13,6 +13,7 @@ import SEO from "../layout/seo"
 import Obfuscate from "react-obfuscate"
 
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai"
+import { GiHealthNormal } from "react-icons/gi"
 
 import styles from "./index.module.css"
 
@@ -46,54 +47,44 @@ const IndexPage = () => (
       <Container fluid="true">
         <div className={styles.introSection}>
           <Row>
-            <Col lg={8}>
+            <Col lg={7}>
               <Row>
-                <Col>
-                  <p
-                    style={{
-                      margin:
-                        "var(--mobile-content-padding) 0 var(--mobile-content-padding) 0",
-                    }}
-                  >
-                    Vi bedriver öppen hjärtsjukvård på specialistnivå med
-                    erfarna kardiologer med modern utrustning i ändamålsenliga
-                    lokaler. Ring eller maila oss gärna för att boka ett besök.
-                  </p>
-                </Col>
-              </Row>
-              <Row>
-                <Col xl={6}>
+                <Col xl={12}>
                   <div
                     className={styles.numberBox + " " + styles.numberBoxPadding}
                   >
                     <span className={styles.numberBoxIcon}>
-                      <AiOutlinePhone />
+                      <GiHealthNormal />
                     </span>
                     <span className={styles.numberBoxText}>
-                      <Obfuscate tel="018 611 72 60" /> (Mån-tor 9-16)
+                      Vi bedriver <strong>öppen hjärtsjukvård</strong> på <strong>specialistnivå</strong> med
+                      erfarna kardiologer med modern utrustning i ändamålsenliga
+                      lokaler.
                     </span>
                   </div>
                 </Col>
-                <Col xl={6}>
+              </Row>
+              <Row>
+                <Col xl={12}>
                   <div
                     className={
                       styles.numberBox + " " + styles.numberBoxPadding2
                     }
                   >
-                    <span
-                      className={styles.numberBoxIcon}
-                      style={{ fontSize: "1.25em" }}
-                    >
+                    <span className={styles.numberBoxIcon}>
                       <AiOutlineMail />
                     </span>
                     <span className={styles.numberBoxText}>
-                      <Obfuscate email="info@specialistläkargruppen.se" />
+                      Ring oss gärna på telefon{" "}
+                      <Obfuscate tel="018 611 72 60" /> (Mån-tor 9-16) eller
+                      skicka ett mail till{" "}
+                      <Obfuscate email="info@specialistläkargruppen.se" />. Avbokning och ombokning sker via telefon.
                     </span>
                   </div>
                 </Col>
               </Row>
             </Col>
-            <Col lg={4}>
+            <Col lg={5}>
               <Image src="hearts.jpg" />
             </Col>
           </Row>
@@ -135,10 +126,12 @@ const IndexPage = () => (
           <Row>
             <Col lg={6}>
               <p>
-                Till oss kommer man som patient med misstänkt hjärtsjukdom såsom
-                andfåddhet, oregelbunden hjärtrytm eller bröstsmärta av oklar
-                genes för att utesluita eller bekräfta hjärtsjukdom. Ofta med
-                hjälp av arbetsprov, ultraljud hjärta (ekokardiografi) eller
+                Till oss kommer man som patient med misstänkt hjärtsjukdom såsom{" "}
+                <strong>andfåddhet</strong>,{" "}
+                <strong>oregelbunden hjärtrytm</strong> eller{" "}
+                <strong>bröstsmärta</strong> av oklar genes för att utesluita
+                eller bekräfta hjärtsjukdom. Ofta med hjälp av arbetsprov,
+                ultraljud hjärta (ekokardiografi) eller
                 lungfunktionsundersökning (spirometri).
               </p>
 

@@ -5,10 +5,28 @@ import SiteWidth from "./site-width"
 
 import styles from "./header.module.css"
 
+if (typeof window !== `undefined`) {
+  window.googleTranslateElementInit = function() {
+    new window.google.translate.TranslateElement(
+      {
+        pageLanguage: "sv",
+        layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+        gaTrack: true,
+        gaId: "UA-44043247-1",
+      },
+      "google_translate_element"
+    )
+  }
+}
 const Header = ({ siteTitle }) => (
   <header className={styles.header}>
     <SiteWidth>
       <Container fluid="true">
+        <div id="google_translate_element" className={styles.translateDropdown}></div>
+        <script
+          type="text/javascript"
+          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        ></script>
         <div className={styles.content}>
           <span className={styles.preSiteTitle}>Välkommen till</span>
           <h1 className={styles.siteTitle}>

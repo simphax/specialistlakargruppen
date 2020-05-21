@@ -8,9 +8,9 @@ import Obfuscate from "react-obfuscate"
 import styled from "styled-components"
 
 const StyledFooter = styled.footer`
-  background: var(--color-dark-grey);
+  background: var(--color-black);
   color: #fff;
-  padding: 2rem 0;
+  padding: 4rem 0;
   font-size: 0.8rem;
 `
 const ContentPadding = styled.div`
@@ -37,7 +37,7 @@ const Footer = () => (
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col lg={6}>
               <LeftContent>
                 Samariterhemmet, Dragarbrunnsgatan 70, Uppsala
                 <br />
@@ -49,8 +49,9 @@ const Footer = () => (
                 <br />
                 Landstingsavtal, frikort gäller
               </LeftContent>
-            </Col>{" "}
-            <Col>
+            </Col>
+            <Col lg={6}>
+              <div className="d-block d-lg-none">&nbsp;</div>
               Specialistläkargruppen drivs i samarbete med Uppsala och
               Stockholms landsting. Till oss kan du ringa själv och beställa tid
               eller få remiss från din läkare. Vi finns på Samariterhemmets
