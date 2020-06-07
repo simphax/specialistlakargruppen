@@ -19,7 +19,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
-        postCssPlugins: [require(`postcss-preset-env`)({ stage: 0 })],
+        postCssPlugins: [
+          require(`postcss-preset-env`)({
+            stage: 0,
+            browsers: [">0.25%", "not dead"],
+            importFrom: "src/layout/layout.variables.css",
+          }),
+        ],
       },
     },
     {
@@ -38,7 +44,7 @@ module.exports = {
         background_color: `#e56343`,
         theme_color: `#e56343`,
         display: `standalone`,
-        icon: `src/images/hearts.png`,
+        icon: `src/images/hearts-square.png`,
       },
     },
     `gatsby-plugin-styled-components`,

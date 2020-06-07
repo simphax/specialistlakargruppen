@@ -4,41 +4,21 @@ import SiteWidth from "./site-width"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Obfuscate from "react-obfuscate"
-
-import styled from "styled-components"
-
-const StyledFooter = styled.footer`
-  background: var(--color-black);
-  color: #fff;
-  padding: 4rem 0;
-  font-size: 0.8rem;
-`
-const ContentPadding = styled.div`
-  padding: 0 var(--mobile-site-padding);
-`
-
-const Title = styled.h2`
-  font-size: 1.6em;
-  margin: 0 0 0.3em 0;
-`
-const LeftContent = styled.p`
-  margin: 0;
-  line-height: 1.74em;
-`
+import styles from "./footer.module.css"
 
 const Footer = () => (
-  <StyledFooter>
+  <footer className={styles.footer}>
     <SiteWidth>
       <Container fluid="true">
-        <ContentPadding>
+        <div className={styles.contentPadding}>
           <Row>
             <Col>
-              <Title>Specialistläkargruppen</Title>
+              <h2 className={styles.title}>Specialistläkargruppen</h2>
             </Col>
           </Row>
           <Row>
             <Col lg={6}>
-              <LeftContent>
+              <p className={styles.leftContent}>
                 Samariterhemmet, Dragarbrunnsgatan 70, Uppsala
                 <br />
                 Telefontid mån–tor 9–11
@@ -48,7 +28,7 @@ const Footer = () => (
                 <Obfuscate email="info@specialistläkargruppen.se" />
                 <br />
                 Landstingsavtal, frikort gäller
-              </LeftContent>
+              </p>
             </Col>
             <Col lg={6}>
               <div className="d-block d-lg-none">&nbsp;</div>
@@ -60,10 +40,10 @@ const Footer = () => (
               på remiss eller ej. Frikort gäller.
             </Col>
           </Row>
-        </ContentPadding>
+        </div>
       </Container>
     </SiteWidth>
-  </StyledFooter>
+  </footer>
 )
 
 export default Footer

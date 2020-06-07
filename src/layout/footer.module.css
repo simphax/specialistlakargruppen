@@ -1,0 +1,19 @@
+.footer {
+  background: var(--color-black);
+  color: #fff;
+  padding: 4rem 0;
+  font-size: 0.8rem;
+}
+.content-padding {
+  padding: 0 var(--mobile-site-padding);
+}
+
+.title {
+  font-size: 1.6em;
+  margin: 0 0 0.3em 0;
+}
+
+.left-content {
+  margin: 0;
+  line-height: 1.74em;
+}
