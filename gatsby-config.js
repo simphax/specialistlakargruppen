@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/new`,
+  pathPrefix: ``,
   siteMetadata: {
     title: `Specialistläkargruppen i Uppsala`,
     description: `Vi bedriver öppen hjärtsjukvård på specialistnivå med erfarna kardiologer med modern utrustning i ändamålsenliga lokaler.`,

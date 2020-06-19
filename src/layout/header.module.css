@@ -58,6 +58,6 @@
 
 .translate-dropdown {
   position: absolute;
-  top: 0;
+  top: 40px;
   right: 90px;
 }
