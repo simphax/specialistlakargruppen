@@ -83,7 +83,7 @@ const IndexPage = () => {
                         Ring oss gärna på telefon{" "}
                         <Obfuscate tel="018 611 72 60" /> (Mån-tor 9-16) eller
                         skicka ett mail till{" "}
-                        <Obfuscate email="info@specialistläkargruppen.se" />.
+                        <Obfuscate email="info@specialistlakargruppen.se" />.
                         Avbokning och ombokning sker via telefon.
                       </span>
                     </div>

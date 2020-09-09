@@ -25,7 +25,7 @@ const Footer = () => (
                 <br />
                 <Obfuscate tel="018 611 72 60" />
                 <br />
-                <Obfuscate email="info@specialistläkargruppen.se" />
+                <Obfuscate email="info@specialistlakargruppen.se" />
                 <br />
                 Landstingsavtal, frikort gäller
               </p>

@@ -4,6 +4,7 @@ module.exports = {
     title: `Specialistläkargruppen i Uppsala`,
     description: `Vi bedriver öppen hjärtsjukvård på specialistnivå med erfarna kardiologer med modern utrustning i ändamålsenliga lokaler.`,
     author: `Specialisläkargruppen i Uppsala`,
+    siteUrl: `https://specialistlakargruppen.se`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -72,5 +73,6 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-sitemap`
   ],
 }
