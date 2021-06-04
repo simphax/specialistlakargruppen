@@ -1,22 +1,25 @@
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useContext } from "react"
 import Container from "react-bootstrap/Container"
 import SiteWidth from "./site-width"
+import Context from "../context"
 
 import Helmet from "react-helmet"
 
 import styles from "./header.module.css"
 
+const Header = ({ siteTitle }) => {
+  const [context, setContext] = useContext(Context)
 
-const Header = ({ siteTitle }) => (
-  <header className={styles.header}>
-    <Helmet>
-      <meta
-        name="google-translate-customization"
-        content="a970ccd2ee22213f-7f6ec6b01ddf13d8-g1480cae39c7668bb-19"
-      ></meta>
-      <script type="text/javascript">
-        {`
+  return (
+    <header className={styles.header}>
+      <Helmet>
+        <meta
+          name="google-translate-customization"
+          content="a970ccd2ee22213f-7f6ec6b01ddf13d8-g1480cae39c7668bb-19"
+        ></meta>
+        <script type="text/javascript">
+          {`
           function googleTranslateElementInit() {
             setTimeout(function() {
               new google.translate.TranslateElement(
@@ -32,30 +35,36 @@ const Header = ({ siteTitle }) => (
             }, 500);
           }
           `}
-      </script>
-    </Helmet>
-    <SiteWidth>
-      <Container fluid="true">
-        <div
-          id="google_translate_element"
-          className={styles.translateDropdown}
-        ></div>
-        <script
-          type="text/javascript"
-          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-        ></script>
-        <div className={styles.content}>
-          <span className={styles.preSiteTitle}>Välkommen till</span>
-          <h1 className={styles.siteTitle}>
-            Specialistläkargruppen
-            <span className={styles.siteTitleUppsala}>Uppsala</span>
-          </h1>
-        </div>
-      </Container>
-    </SiteWidth>
-  </header>
-)
-
+        </script>
+      </Helmet>
+      {context.cookieConsent ? (
+        <Helmet>
+          <script
+            type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          ></script>
+        </Helmet>
+      ) : (
+        <></>
+      )}
+      <SiteWidth>
+        <Container fluid="true">
+          <div
+            id="google_translate_element"
+            className={styles.translateDropdown}
+          ></div>
+          <div className={styles.content}>
+            <span className={styles.preSiteTitle}>Välkommen till</span>
+            <h1 className={styles.siteTitle}>
+              Specialistläkargruppen
+              <span className={styles.siteTitleUppsala}>Uppsala</span>
+            </h1>
+          </div>
+        </Container>
+      </SiteWidth>
+    </header>
+  )
+}
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }

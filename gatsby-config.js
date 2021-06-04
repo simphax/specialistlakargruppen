@@ -30,10 +30,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [`source sans pro:300,400,400i,500,600,700,800`],
-        display: "swap",
+        fonts: {
+          google2: [
+            {
+              family: "Source Sans Pro",
+              axes: "wght@300;400;700",
+            },
+          ],
+        },
       },
     },
     {
@@ -73,6 +79,16 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-sitemap`
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: `UA-44043247-1`,
+          cookieName: 'CookieConsent',
+        },
+        environments: ['production']
+      },
+    }
   ],
 }

@@ -1,11 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styles from "./capability-button.module.css"
-import Modal from "./modal"
+import Modal from "../modal"
 
-import "./react-modal.css"
-
-const CapabilityButton = ({ title, path, html }) => {
+const CapabilityButton = ({ title, path, fullTitle, html }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false)
   function openModal(e) {
     e.preventDefault()
@@ -22,7 +20,7 @@ const CapabilityButton = ({ title, path, html }) => {
         <span className={styles.title}>{title}</span>
       </a>
       <Modal
-        title={title}
+        title={fullTitle}
         html={html}
         isOpen={modalIsOpen}
         onRequestClose={closeModal}

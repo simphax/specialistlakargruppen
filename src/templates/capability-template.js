@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Homepage from "../pages/index"
 import SEO from "../layout/seo"
-import CapabilityButtonModal from "../components/molecules/capability-button/modal"
+import Modal from "../components/molecules/modal"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -18,7 +18,7 @@ export default function Template({
   return (
     <>
       <SEO title={frontmatter.title} />
-      <CapabilityButtonModal
+      <Modal
         title={frontmatter.title}
         html={html}
         isOpen={modalIsOpen}

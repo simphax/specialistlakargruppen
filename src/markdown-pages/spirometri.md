@@ -4,6 +4,7 @@ order: 100
 date: "2018-01-01"
 shortTitle: "Spirometri"
 title: "Spirometri"
+type: "service"
 ---
 
 Spirometri används som hjälp vid diagnos och uppföljning av lungsjukdomar som astma, KOL, lungfibros, cystisk fibros, sensorisk hyperreaktivitet samt andra sjukdomar med lungpåverkan.

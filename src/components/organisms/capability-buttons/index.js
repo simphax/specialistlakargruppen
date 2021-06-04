@@ -8,6 +8,7 @@ const CapabilityButtons = () => {
       allMarkdownRemark(
         sort: { order: ASC, fields: [frontmatter___order] }
         limit: 2000
+        filter: {frontmatter: {type: {eq: "service"}}}
       ) {
         edges {
           node {
@@ -29,12 +30,13 @@ const CapabilityButtons = () => {
 
   return (
     <>
-      {posts.map(post => (
+      {posts.map(({node}) => (
         <CapabilityButton
-          key={post.node.frontmatter.path}
-          title={post.node.frontmatter.shortTitle}
-          path={post.node.frontmatter.path}
-          html={post.node.html}
+          key={node.frontmatter.path}
+          title={node.frontmatter.shortTitle}
+          fullTitle={node.frontmatter.title}
+          path={node.frontmatter.path}
+          html={node.html}
         />
       ))}
     </>

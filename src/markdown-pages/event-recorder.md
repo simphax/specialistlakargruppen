@@ -4,6 +4,7 @@ order: 100
 date: "2018-01-01"
 shortTitle: "Event recorder"
 title: "Event recorder - Zenicor EKG"
+type: "service"
 ---
 
 Du får med dig en liten apparat hem under ett par veckor upp till en månad och får själv ta EKG på morgonen och kvällen genom att lägga dina tummar på två elektroder. Du bär sedan med dig apparaten i en ficka eller väska och om du känner av hjärtklappning, yrsel eller andra symptom så tar du även då ett EKG.

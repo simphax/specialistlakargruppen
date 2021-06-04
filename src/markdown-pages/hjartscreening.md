@@ -4,6 +4,7 @@ order: 100
 date: "2018-01-01"
 shortTitle: "Hjärtscreening"
 title: "Avancerad hjärtscreening (ej landstingsavtal)"
+type: "service"
 ---
 
 ### Arbetsprov

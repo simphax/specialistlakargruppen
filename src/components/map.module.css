@@ -1,0 +1,29 @@
+.content {
+  background: var(--color-bg-white);
+  padding: 1px var(--mobile-site-padding) var(--mobile-site-padding) var(--mobile-site-padding);
+}
+
+.site-width {
+  margin: 0 auto;
+  max-width: 1400px;
+  position: relative;
+  @media (min-width: 540px) {
+    padding: 0 3rem;
+  }
+}
+
+.map-container {
+  border-top: 4px solid var(--color-dark-grey);
+  overflow: hidden;
+  padding-bottom: 300px;
+  position: relative;
+  height: 0;
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 300px;
+  width: 100%;
+  position: absolute;
+}

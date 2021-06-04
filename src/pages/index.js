@@ -1,4 +1,5 @@
-import React from "react"
+import React, { createContext, useContext, useState } from "react"
+import Context from "../context"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
@@ -12,6 +13,8 @@ import TeamItem from "../components/molecules/team-item"
 import SEO from "../layout/seo"
 import Obfuscate from "react-obfuscate"
 import { Collapse } from "react-collapse"
+import Map from "../components/map"
+import Map2 from "../components/map2"
 
 import { AiOutlineDown, AiOutlineMail } from "react-icons/ai"
 import { GiHealthNormal } from "react-icons/gi"
@@ -20,7 +23,6 @@ import styles from "./index.module.css"
 
 import SiteWidth from "../layout/site-width"
 
-import Map from "../components/map"
 import CapabilityButtons from "../components/organisms/capability-buttons"
 
 const TeamItemLayout = styled.div`
@@ -42,7 +44,8 @@ const TeamItemLayout = styled.div`
 `
 
 const IndexPage = () => {
-  const [teamIsOpen, setTeamIsOpen] = React.useState(false)
+  const [teamIsOpen, setTeamIsOpen] = useState(false)
+
   return (
     <Layout>
       <SEO />
@@ -177,7 +180,8 @@ const IndexPage = () => {
           </div>
         </Container>
       </SiteWidth>
-      <Map />
+      <Map></Map>
+      <Map2></Map2>
     </Layout>
   )
 }

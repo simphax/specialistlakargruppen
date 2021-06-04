@@ -5,10 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Modal from "react-modal"
+import CookieConsent, { getCookieConsentValue } from "react-cookie-consent"
+import CookieConsentInfo from "../components/molecules/cookie-consent-info"
+import Context from "../context"
 
 import Header from "./header"
 import Footer from "./footer"
@@ -17,7 +20,15 @@ import "./layout.variables.css"
 import "./layout.css"
 import "./base.css"
 
+import { useLocation } from "@reach/router" // this helps tracking the location
+import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
+import SiteWidth from "./site-width"
+
 Modal.setAppElement(`#___gatsby`)
+
+const defaultContextState = {
+  cookieConsent: getCookieConsentValue() == "true",
+}
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,12 +41,76 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const [context, setContext] = useState(defaultContextState)
+
+  const location = useLocation()
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title}/>
+    <Context.Provider value={[context, setContext]}>
+      <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <Footer />
-    </>
+      {context.openCookieBar ? (
+        <div>
+          <CookieConsent
+            debug={true}
+            buttonText="Tillåt alla cookies"
+            declineButtonText="Neka cookies"
+            onAccept={() => {
+              window.location.reload()
+            }}
+            enableDeclineButton
+            onDecline={() => {
+              window.location.reload()
+            }}
+            declineButtonStyle={{
+              background: "none",
+              color: "#fff",
+              padding: "5px 10px",
+              margin: "15px 0 15px 15px",
+            }}
+            buttonStyle={{
+              background: "#e56343",
+              color: "#fff",
+            }}
+            style={{
+              background: "#2f2f2f",
+              zIndex: "0",
+            }}
+          >
+            <CookieConsentInfo />
+          </CookieConsent>
+        </div>
+      ) : (
+        <CookieConsent
+          buttonText="Tillåt alla cookies"
+          onAccept={() => {
+            setContext({
+              ...context,
+              cookieConsent: getCookieConsentValue() == "true",
+            })
+            initializeAndTrack(location)
+          }}
+          declineButtonText="Neka cookies"
+          enableDeclineButton
+          declineButtonStyle={{
+            background: "none",
+            color: "#fff",
+            padding: "5px 10px",
+            margin: "15px 0 15px 15px",
+          }}
+          buttonStyle={{
+            background: "#e56343",
+            color: "#fff",
+          }}
+          style={{
+            background: "#2f2f2f",
+            zIndex: "0",
+          }}
+        >
+          <CookieConsentInfo />
+        </CookieConsent>
+      )}
+    </Context.Provider>
   )
 }
 

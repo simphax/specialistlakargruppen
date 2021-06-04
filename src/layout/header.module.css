@@ -30,7 +30,7 @@
 .site-title {
   font-family: var(--base-font-family);
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
   color: var(--color-primary);
   margin: 0;
@@ -46,7 +46,7 @@
   display: block;
   color: var(--color-black);
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 400;
   @media (min-width: 430px) {
     font-size: 1.7rem;
     font-weight: 300;
