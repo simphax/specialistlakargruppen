@@ -87,6 +87,11 @@ module.exports = {
           trackingId: `UA-44043247-1`,
           cookieName: 'CookieConsent',
         },
+        googleTagManager: {
+          trackingId: 'GTM-MZNKML6', // leave empty if you want to disable the tracker
+          cookieName: 'CookieConsent', // default
+          dataLayerName: 'dataLayer', // default
+        },
         environments: ['production']
       },
     }
