@@ -69,7 +69,7 @@ const Layout = ({ children }) => {
               margin: "15px 0 15px 15px",
             }}
             buttonStyle={{
-              background: "#e56343",
+              background: "#AA2700",
               color: "#fff",
             }}
             style={{
@@ -99,7 +99,7 @@ const Layout = ({ children }) => {
             margin: "15px 0 15px 15px",
           }}
           buttonStyle={{
-            background: "#e56343",
+            background: "#AA2700",
             color: "#fff",
           }}
           style={{
