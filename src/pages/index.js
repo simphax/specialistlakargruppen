@@ -101,26 +101,16 @@ const IndexPage = () => {
           <div className={styles.content}>
             <Title>Vi utför</Title>
             <CapabilityButtons />
-            <Title>Välkommen på ett besök</Title>
+            <Title>Boka tid för hjärtsjukvård på specialistnivå i Uppsala</Title>
             <Row>
               <Col lg={6}>
                 <p>
-                  Till oss kommer man som patient med misstänkt hjärtsjukdom
-                  såsom <strong>andfåddhet</strong>,{" "}
-                  <strong>oregelbunden hjärtrytm</strong> eller{" "}
-                  <strong>bröstsmärta</strong> av oklar genes för att utesluita
-                  eller bekräfta hjärtsjukdom. Ofta med hjälp av arbetsprov,
-                  ultraljud hjärta (ekokardiografi) eller
-                  lungfunktionsundersökning (spirometri).
+                  Till oss är du som patient med misstänkt hjärtsjukdom välkommen på ett besök. Du bokar din tid genom att antingen kontakta oss själv här (länk) eller genom en remiss från din läkare. Du hittar oss på Samariterhemmets Vårdcentrum plan 1 med ingång via huvudingången, hiss finns. Vi har även avtal med landstinget och taxan är 260 kr oavsett om du kommer på remiss eller ej. Frikort gäller.
                 </p>
-
+ <Title>Misstänkt hjärtsjukdom - symptom och undersökning</Title>
                 <p>
-                  Vi har även möjlighet att remittera till labb för relevanta
-                  prover efter besöket såsom t.ex. blodstatus, njurprov,
-                  cholesterol, blodsocker mm. Detta genom avtal med medielabb på
-                  läkarhuset samt kompletterande rtg på medicinsk rtg mitt emot
-                  med ofta tid direkt efter läkarbesöket. Vid behov skriver vi
-                  även ut recept som skickas elektroniskt till Ditt Apotek.
+                 Du som misstänker en eventuell hjärtsjukdom och upplever symptom som andfåddhet, oregelbunden hjärtrytm eller bröstsmärta av oklar genes är välkommen att boka ditt besök hos oss. Vi jobbar oftast med hjälp av arbetsprov som ultraljud hjärta (ekokardiografi) eller lungfunktionsundersökning (spirometri) för att utesluta eller bekräfta hjärtsjukdom. </p>
+<p>Vi har även möjlighet att remittera till labb efter besöket för relevanta prover såsom blodstatus, njurprov, kolesterol, blodsocker m.m. 
                 </p>
               </Col>
               <Col lg={6}>
