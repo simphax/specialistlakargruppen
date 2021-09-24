@@ -13,7 +13,7 @@ const Map2 = () => {
           <Container fluid="true">
             <div className={styles.content}>
               <span>
-                <h4>Vår adress</h4>
+                <h2>Vår adress</h2>
                 Specialistläkargruppen Uppsala AB
                 <br />
                 Dragarbrunnsgatan 70
