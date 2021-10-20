@@ -26,7 +26,7 @@ const Footer = () => {
                   <p className={styles.leftContent}>
                     Samariterhemmet, Dragarbrunnsgatan 70, Uppsala
                     <br />
-                    Telefontid mån–tor 9–11
+                    Telefontid mån–tor 9–11:30
                     <br />
                     <Obfuscate tel="018 611 72 60" />
                     <br />
