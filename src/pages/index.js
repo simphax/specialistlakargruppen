@@ -84,7 +84,7 @@ const IndexPage = () => {
                       </span>
                       <span className={styles.numberBoxText}>
                         Ring oss gärna på telefon{" "}
-                        <Obfuscate tel="018 611 72 60" /> (Mån-tor 9-16.00) eller
+                        <Obfuscate tel="018 611 72 60" /> (Mån-tor 9-11.30) eller
                         skicka ett mail till{" "}
                         <Obfuscate email="info@specialistlakargruppen.se" />.
                         Avbokning och ombokning sker via telefon.
