@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styles from "./capability-button.module.css"
+import * as styles from "./capability-button.module.css"
 import Modal from "../modal"
 
 const CapabilityButton = ({ title, path, fullTitle, html }) => {

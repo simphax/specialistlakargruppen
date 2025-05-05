@@ -4,7 +4,7 @@ import SiteWidth from "./site-width"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Obfuscate from "react-obfuscate"
-import styles from "./footer.module.css"
+import * as styles from "./footer.module.css"
 import Context from "../context"
 
 const Footer = () => {

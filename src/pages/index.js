@@ -19,7 +19,7 @@ import Map2 from "../components/map2"
 import { AiOutlineDown, AiOutlineMail } from "react-icons/ai"
 import { GiHealthNormal } from "react-icons/gi"
 
-import styles from "./index.module.css"
+import * as styles from "./index.module.css"
 
 import SiteWidth from "../layout/site-width"
 

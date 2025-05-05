@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styles from "./team-item.module.css"
+import * as styles from "./team-item.module.css"
 
 const TeamItem = ({ title, description }) => {
   return (

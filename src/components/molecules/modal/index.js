@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styles from "./modal.module.css"
+import * as styles from "./modal.module.css"
 import Modal from "react-modal"
 import { MdClose } from "react-icons/md"
 

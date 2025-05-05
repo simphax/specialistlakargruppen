@@ -6,7 +6,7 @@ import Context from "../context"
 
 import Helmet from "react-helmet"
 
-import styles from "./header.module.css"
+import * as styles from "./header.module.css"
 
 const Header = ({ siteTitle }) => {
   const [context, setContext] = useContext(Context)

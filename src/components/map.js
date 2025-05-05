@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import Context from "../context"
 
-import styles from "./map.module.css"
+import * as styles from "./map.module.css"
 
 var count = 0
 
