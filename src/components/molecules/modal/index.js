@@ -23,7 +23,7 @@ const CapabilityButtonModal = ({ isOpen, onRequestClose, title, html }) => {
             <button className={styles.closeButton} onClick={onRequestClose}>
               <MdClose />
             </button>
-            <h2>{title}</h2>
+            <h2 className={styles.title}>{title}</h2>
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </div>
         </div>

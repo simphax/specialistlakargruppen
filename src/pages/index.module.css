@@ -2,6 +2,9 @@
   background: var(--color-black);
   color: #fff;
   padding: 30px var(--mobile-site-padding);
+  & a {
+    color: #fff;
+  }
   @media (min-width: 540px) {
     margin: 0 -26px;
     padding: 30px calc(var(--mobile-site-padding) + 26px);
@@ -85,7 +88,6 @@
   margin-top: 1rem;
 }
 
-
 .collapser {
   transition: height 300ms;
 }
@@ -117,11 +119,11 @@
 .collapse-button:hover {
   background-color: var(--color-bg-grey);
 }
-.collapse-button > svg{
+.collapse-button > svg {
   margin-left: 1em;
   transition: all 150ms;
   transform: rotate(0deg);
 }
-.collapse-button--open > svg{
+.collapse-button--open > svg {
   transform: rotate(180deg);
 }

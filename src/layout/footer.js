@@ -32,7 +32,8 @@ const Footer = () => {
                     <br />
                     <Obfuscate email="info@specialistlakargruppen.se" />
                     <br />
-                    Landstingsavtal, frikort gäller
+                    <br />
+                    ★ 4.7 av 5 - <a href="https://www.varden.se/vardgivare/39412-internmedicin-specialistlakargruppen-hjartdiagnostik-uppsala" target="_blank">Besök oss på Vården.se</a>
                   </p>
                 </Col>
                 <Col lg={6}>
@@ -41,9 +42,7 @@ const Footer = () => {
                   Stockholms landsting. Till oss kan du ringa själv och beställa
                   tid eller få remiss från din läkare. Vi finns på
                   Samariterhemmets Vårdcentrum plan 1 med ingång via
-                  huvudingången, hiss finns. Vi har avtal med landstinget och
-                  taxan är 260 kr oavsett om du kommer på remiss eller ej.
-                  Frikort gäller.
+                  huvudingången, hiss finns.
                 </Col>
               </Row>
             </div>

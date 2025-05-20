@@ -10,6 +10,7 @@ import Title from "../components/atoms/title"
 import Image from "../components/image"
 import AppleImage from "../components/apple-image"
 import TeamItem from "../components/molecules/team-item"
+import ModalLink from "../components/molecules/modal-link"
 import SEO from "../layout/seo"
 import Obfuscate from "react-obfuscate"
 import { Collapse } from "react-collapse"
@@ -24,6 +25,8 @@ import * as styles from "./index.module.css"
 import SiteWidth from "../layout/site-width"
 
 import CapabilityButtons from "../components/organisms/capability-buttons"
+import PricesLink from "../components/organisms/prices-link"
+
 
 const TeamItemLayout = styled.div`
   & > * {
@@ -105,14 +108,33 @@ const IndexPage = () => {
             <Row>
               <Col lg={6}>
                 <p>
-                  Till oss är du som patient med misstänkt hjärtsjukdom välkommen på ett besök. Du bokar din tid genom att antingen kontakta oss själv här (länk) eller genom en remiss från din läkare. Du hittar oss på Samariterhemmets Vårdcentrum plan 1 med ingång via huvudingången, hiss finns. Vi har även avtal med landstinget och taxan är 260 kr oavsett om du kommer på remiss eller ej. Frikort gäller.
+                  Välkommen till oss om du misstänker hjärtsjukdom. Du kan boka tid
+                  genom att kontakta oss direkt eller via remiss från din läkare.
+                  Vi finns på Samariterhemmets Vårdcentrum plan 1 med ingång via huvudingången, hiss finns. Vi samarbetar med flera hälsocentraler i Uppsala län.
                 </p>
- <Title>Misstänkt hjärtsjukdom - symptom och undersökning</Title>
+
+                <Title>Misstänkt hjärtsjukdom – symtom och utredning</Title>
                 <p>
-                 Du som misstänker en eventuell hjärtsjukdom och upplever symptom som andfåddhet, oregelbunden hjärtrytm eller bröstsmärta av oklar genes är välkommen att boka ditt besök hos oss. Vi jobbar oftast med hjälp av arbetsprov som ultraljud hjärta (ekokardiografi) eller lungfunktionsundersökning (spirometri) för att utesluta eller bekräfta hjärtsjukdom. </p>
-<p>Vi har även möjlighet att remittera till labb efter besöket för relevanta prover såsom blodstatus, njurprov, kolesterol, blodsocker m.m. 
+                  Upplever du andfåddhet, oregelbunden hjärtrytm eller bröstsmärta utan
+                  klar orsak? Boka en tid för en grundlig utredning hos oss. Vi använder
+                  bland annat arbetsprov, hjärtultraljud&nbsp;(ekokardiografi) och
+                  lungfunktionsmätning&nbsp;(spirometri) för att bekräfta eller utesluta
+                  hjärtsjukdom.
+                </p>
+                <p>
+                  Vid behov kan vi även remittera dig för laboratorieprover, exempelvis
+                  blodstatus, njurfunktion, kolesterol och blodsocker.
+                </p>
+
+                <Title>Priser</Title>
+                <p>
+                  Vi har avtal med utvalda hälsocentraler i Uppsala län.
+                  Det går också bra att boka privat vård.
+                  <br />
+                  <PricesLink />
                 </p>
               </Col>
+
               <Col lg={6}>
                 <AppleImage />
               </Col>
@@ -142,28 +164,32 @@ const IndexPage = () => {
                 />
 
                 <TeamItem
-                  title="Hamid Bastani"
-                  description="Specialist i kardiologi och internmedicin
-          samt arytmologi"
+                  title="Abdullah Baroudi"
+                  description="Kardiolog, specialistläkare"
                 />
 
                 <TeamItem
                   title="Kjell Karlström"
-                  description="Biomedicinsk analytiker, forskat på Uas inom 
-          klinisk fysiologi "
+                  description="Biomedicinsk analytiker, forskat på UAS inom klinisk fysiologi"
                 />
+
+                <TeamItem
+                  title="Zenaida Silayan‑Lidström"
+                  description="Biomedicinsk analytiker, forskat bl.a. i Saudiarabien"
+                />
+
+
+                <TeamItem
+                  title="Monica Olli King"
+                  description="Vikarierande administratör"
+                />
+
+                <TeamItem title="Vikarierande kardiolog" description="" />
 
                 <TeamItem
                   title="Gunilla Grotte"
                   description="Mottagningssköterska"
                 />
-
-                <TeamItem
-                  title="Ann-Charlotte Karlsson"
-                  description="Vikarierande administratör"
-                />
-
-                <TeamItem title="Vikarierande kardiolog" description="" />
               </TeamItemLayout>
             </Collapse>
             <Title>Hitta hit</Title>

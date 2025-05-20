@@ -1,0 +1,16 @@
+.item {
+  margin-right: calc(var(--mobile-content-padding) / 2);
+  margin-bottom: calc(var(--mobile-content-padding) / 2);
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-dark-grey);
+  text-decoration: underline;
+  @media (min-width: 991px) {
+    font-size: 1rem;
+  }
+  &:hover {
+  }
+}
