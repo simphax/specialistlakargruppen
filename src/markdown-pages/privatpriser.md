@@ -13,10 +13,10 @@ Priserna nedan inkluderar läkarkommentar samt skriftligt utlåtande. Frikort oc
 
 | Undersökning | Pris |
 |--------------|------|
-| Arbetsprov (belastnings‑EKG) | 2 000&nbsp;kr |
+| Arbetsprov (belastnings‑EKG) | 1 500&nbsp;kr |
 | 24‑timmars blodtrycksmätning | 2 000&nbsp;kr |
 | Långtids‑EKG (Holter) | 2 000&nbsp;kr |
-| Ekokardiografi (hjärtultraljud) | 2 700&nbsp;kr |
+| Ekokardiografi (hjärtultraljud) | 2 000&nbsp;kr |
 
 Viss tillgänglighet för akuta tider finns – pris: 2 000 kr.
 

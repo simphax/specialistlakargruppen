@@ -17,7 +17,7 @@ const PricesLink = () => {
               path
               order
               shortTitle
-              title
+              fullTitle: title
               date(formatString: "MMMM DD, YYYY")
             }
             excerpt
@@ -30,11 +30,11 @@ const PricesLink = () => {
 
   return (
     <>
-      {posts.map(({node}) => (
+      {posts.map(({ node }) => (
         <ModalLink
           key={node.frontmatter.path}
           title={node.frontmatter.shortTitle}
-          fullTitle={node.frontmatter.title}
+          fullTitle={node.frontmatter.fullTitle}
           path={node.frontmatter.path}
           html={node.html}
         />
