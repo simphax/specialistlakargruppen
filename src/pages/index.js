@@ -86,11 +86,11 @@ const IndexPage = () => {
                         <AiOutlineMail />
                       </span>
                       <span className={styles.numberBoxText}>
-                        Ring oss gärna på telefon{" "}
-                        <Obfuscate tel="018 611 72 60" /> (Mån-tor 9-11.30) eller
-                        skicka ett mail till{" "}
+                        Bokning och avbokning sker via mail till{" "}
                         <Obfuscate email="info@specialistlakargruppen.se" />.
-                        Avbokning och ombokning sker via telefon.
+                        Du kan också ringa oss på telefon{" "}
+                        <Obfuscate tel="018 611 72 60" /> under telefontid
+                        måndag–onsdag 9–11.
                       </span>
                     </div>
                   </Col>
@@ -110,7 +110,8 @@ const IndexPage = () => {
                 <p>
                   Välkommen till oss om du misstänker hjärtsjukdom. Du kan boka tid
                   genom att kontakta oss direkt eller via remiss från din läkare.
-                  Vi finns på Samariterhemmets Vårdcentrum plan 1 med ingång via huvudingången, hiss finns. Vi samarbetar med flera hälsocentraler i Uppsala län.
+                  Vi finns på Samariterhemmets Vårdcentrum plan 1 med ingång via huvudingången, hiss finns.
+                  Tillfällig adress: Vretgränd 16. Vi samarbetar med flera hälsocentraler i Uppsala län.
                 </p>
 
                 <Title>Misstänkt hjärtsjukdom – symtom och utredning</Title>
@@ -185,11 +186,6 @@ const IndexPage = () => {
                 />
 
                 <TeamItem title="Vikarierande kardiolog" description="" />
-
-                <TeamItem
-                  title="Gunilla Grotte"
-                  description="Mottagningssköterska"
-                />
               </TeamItemLayout>
             </Collapse>
             <Title>Hitta hit</Title>

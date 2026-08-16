@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Homepage from "../pages/index"
-import SEO from "../layout/seo"
+import SEO from "../layout/Seo"
 import Modal from "../components/molecules/modal"
 
 export default function Template({

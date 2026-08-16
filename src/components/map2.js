@@ -14,6 +14,9 @@ const Map2 = () => {
             <div className={styles.content}>
               <span>
                 <h2>Vår adress</h2>
+
+                <strong>Tillfällig adress: Vretgränd 16, 753 22 Uppsala</strong>
+                <br />
                 Specialistläkargruppen Uppsala AB
                 <br />
                 Dragarbrunnsgatan 70

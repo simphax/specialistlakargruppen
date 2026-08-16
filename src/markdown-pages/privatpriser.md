@@ -7,7 +7,7 @@ title: "Priser för privat vård"
 type: "page"
 ---
 
-Boka din undersökning genom att ringa **018 611 72 60** eller maila till **info@specialistlakargruppen.se**.
+Boka din undersökning genom att maila till **info@specialistlakargruppen.se**.
 
 Priserna nedan inkluderar läkarkommentar samt skriftligt utlåtande. Frikort och högkostnadsskydd gäller inte vid privat vård.
 

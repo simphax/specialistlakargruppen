@@ -24,13 +24,17 @@ const Footer = () => {
               <Row>
                 <Col lg={6}>
                   <p className={styles.leftContent}>
+                    <b>Tillfällig adress: Vretgränd 16, 753 22 Uppsala</b>
+                    <br />
                     Samariterhemmet, Dragarbrunnsgatan 70, Uppsala
                     <br />
-                    Telefontid mån–tor 9–11:30
+                    Telefontid mån–ons 9–11
                     <br />
                     <Obfuscate tel="018 611 72 60" />
                     <br />
                     <Obfuscate email="info@specialistlakargruppen.se" />
+                    <br />
+                    Bokning och avbokning sker helst via mail.
                     <br />
                     <br />
                     ★ 4.7 av 5 - <a href="https://www.varden.se/vardgivare/39412-internmedicin-specialistlakargruppen-hjartdiagnostik-uppsala" target="_blank">Besök oss på Vården.se</a>
@@ -38,9 +42,9 @@ const Footer = () => {
                 </Col>
                 <Col lg={6}>
                   <div className="d-block d-lg-none">&nbsp;</div>
-                  Specialistläkargruppen drivs i samarbete med Uppsala och
-                  Stockholms landsting. Till oss kan du ringa själv och beställa
-                  tid eller få remiss från din läkare. Vi finns på
+                  Specialistläkargruppen drivs i samarbete med Region Uppsala.
+                  Till oss kan du ringa själv och beställa tid eller få remiss
+                  från din läkare. Vi finns på
                   Samariterhemmets Vårdcentrum plan 1 med ingång via
                   huvudingången, hiss finns.
                 </Col>
