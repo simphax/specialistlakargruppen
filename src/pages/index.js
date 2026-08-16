@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import styled from "styled-components"
 
-import Layout from "../layout/layout"
+import Layout from "../layout/Layout"
 import Title from "../components/atoms/title"
 import Image from "../components/image"
 import AppleImage from "../components/apple-image"
