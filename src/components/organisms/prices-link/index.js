@@ -17,7 +17,7 @@ const PricesLink = () => {
               path
               order
               shortTitle
-              fullTitle: title
+              fullTitle2: title
               date(formatString: "MMMM DD, YYYY")
             }
             excerpt
@@ -34,7 +34,7 @@ const PricesLink = () => {
         <ModalLink
           key={node.frontmatter.path}
           title={node.frontmatter.shortTitle}
-          fullTitle={node.frontmatter.fullTitle}
+          fullTitle={node.frontmatter.fullTitle2}
           path={node.frontmatter.path}
           html={node.html}
         />

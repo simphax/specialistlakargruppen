@@ -13,8 +13,8 @@ import CookieConsent, { getCookieConsentValue } from "react-cookie-consent"
 import CookieConsentInfo from "../components/molecules/cookie-consent-info"
 import Context from "../context"
 
-import Header from "./header"
-import Footer from "./footer"
+import Header from "./Header"
+import Footer from "./Footer"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./layout.variables.css"
 import "./layout.css"
@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
     query SiteTitleQuery {
       site {
         siteMetadata {
-          title
+          headerTitle: title
         }
       }
     }
@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
   const location = useLocation()
   return (
     <Context.Provider value={[context, setContext]}>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.headerTitle} />
       <main>{children}</main>
       <Footer />
       {context.openCookieBar ? (
